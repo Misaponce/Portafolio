@@ -5,10 +5,139 @@
     --alternative-text-color: #183A37;
 }
 
+/* *{
+    border: 1px solid red;
+} */
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--primary-text-color);
-}   
+}
+
+/* logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* burguer menu bars */
+.menu_btn {
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    top: 2rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* middle bar */
+.menu_btn__burguer {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 30px;
+    height: 3px;
+    background: var(--secondary-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+/* top bar */
+.menu_btn__burguer::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 35px;
+    height: 3px;
+    background: var(--primary-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+/* bottom bar */
+.menu_btn__burguer::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: var(--primary-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+/* bars movement effect */
+.menu_btn__burguer.open {
+    transform: rotate(720deg);
+    background: transparent;
+}
+
+.menu_btn__burguer.open::before {
+    transform: rotate(45deg) translate(4px, 8px);
+    width: 35px;
+    background-color: #C44900;
+}
+
+.menu_btn__burguer.open::after {
+    transform: rotate(-45deg) translate(3px, -8px);
+    width: 35px;
+}
+
+
+/* styling nav */
+nav ul li {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.menu-nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: var(--primary-text-color);
+}
+
+.menu-nav-item {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+
+/* Responsivenes */
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        visibility: hidden;
+    }
+
+    .nav .open {
+        visibility: visible;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .menu_btn {
+        visibility: hidden;
+    }
+  }
