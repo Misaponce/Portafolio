@@ -102,6 +102,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
     color: var(--secondary-text-color);
+    transition: all 0.5s ease-in-out;
 }
 
 .container-fluid {
@@ -109,6 +110,7 @@ nav ul li a:hover {
     justify-content: space-between;
     padding: 0 1rem;
 }
+
 .menu-nav {
     display: flex;
     align-items: center;
@@ -125,15 +127,53 @@ nav ul li a:hover {
 
 
 /* Responsivenes */
-
+/* small devices */
 @media only screen and (max-width: 800px) {
+    /* hidding nav when media query is met */
     .nav {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        opacity: 0.9;
         visibility: hidden;
     }
 
-    .nav .open {
+    .nav.open {
         visibility: visible;
     }
+
+    /* changing menu direction */
+    .nav .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 60vh;
+        overflow: hidden;
+        margin: 0;
+        background-color: #272727;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
+      }
+
+      .nav .menu-nav.open {
+        transform: translateX(0);
+      }
+
+      .nav .menu-nav-item {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: 300;
+        transition: all 0.5s ease-in-out;
+      }
+
+    
   }
 
   @media only screen and (min-width: 800px) {
