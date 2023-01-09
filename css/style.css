@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 /* burguer menu bars */
@@ -114,14 +114,15 @@ nav ul li a:hover {
 .menu-nav {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 3rem;
     margin: 1rem 0;
     color: var(--primary-text-color);
 }
 
 .menu-nav-item {
     text-decoration: none;
-    padding: 1rem;
+    padding: 2rem;
+    gap: 3rem;
 }
 
 
