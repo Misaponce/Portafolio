@@ -125,7 +125,20 @@ nav ul li a:hover {
     gap: 3rem;
 }
 
+/* Hero Section */
 
+.home {
+    height: 80vh;
+    padding: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    height: 100%;
+    width: 80%;
+}
 
 /* Responsivenes */
 /* small devices */
@@ -174,6 +187,9 @@ nav ul li a:hover {
         transition: all 0.5s ease-in-out;
       }
 
+      .logo-container {
+        padding: 2rem;
+    }
     
   }
 
