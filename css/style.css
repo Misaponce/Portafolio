@@ -1,8 +1,11 @@
 :root {
+    /* colors */
     --bg-color: #04151F;
     --primary-text-color: #EFD6AC;
     --secondary-text-color: #C44900;
-    --alternative-text-color: #183A37;
+    --alternative-text-color: #7DCFB6;
+    /* fonts */
+    --main-font: 'Poiret One', cursive;
 }
 
 /* *{
@@ -117,6 +120,8 @@ nav ul li a:hover {
     padding: 0 3rem;
     margin: 1rem 0;
     color: var(--primary-text-color);
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
 }
 
 .menu-nav-item {
@@ -138,6 +143,34 @@ nav ul li a:hover {
 .home-container {
     height: 100%;
     width: 80%;
+}
+
+.home-item h1, h5, p {
+    padding: 0 2rem 2rem 2rem;
+    font-family: var(--main-font);
+    color: #a67134;
+}
+
+.home-item h5 {
+    color: #F79256;
+}
+
+.home-item h2 {
+    padding: 0 2rem;
+    font-family: var(--main-font);
+}
+
+.home-item span {
+    font-family: var(--main-font);
+    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+
+.home-item p {
+    width: 50%;
+    color: var(--primary-text-color);
+    text-justify: inter-word;
+    font-family: var(--main-font);
 }
 
 /* Responsivenes */
