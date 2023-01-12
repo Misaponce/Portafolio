@@ -92,6 +92,7 @@ body {
 
 
 /* styling nav */
+
 nav ul li {
     display: flex;
     list-style: none;
@@ -229,6 +230,28 @@ img {
     width: 250px;
     height: 250px;
     border-radius: 2%;
+}
+
+.skill {
+    padding: 1rem 0 2rem 3rem;
+}
+
+.skill-list {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    color: var(--primary-text-color);
+}
+
+.skill-item {
+    padding: 10px;
+}
+
+ul.skill-list li::before {
+    content: "▹";
+    color: #C44900;
+    padding-right: 5px;
 }
 
 
