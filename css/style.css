@@ -92,6 +92,8 @@ body {
 
 .container-fluid {
     background-color: var(--bg-color);
+    z-index: 99;
+    transition: all 300ms ease-in-out;
 }
 
 nav ul li {
@@ -247,6 +249,16 @@ ul.skill-list li::before {
     content: "▹";
     color: #C44900;
     padding-right: 5px;
+}
+
+/* Scroll effect on navbar */
+
+.scroll-down .container-fluid {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .container-fluid {
+    filter: drop-shadow(0 -10px 20px #183A37 );
 }
 
 
