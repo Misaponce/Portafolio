@@ -8,9 +8,9 @@
     --main-font: 'Poiret One', cursive;
 }
 
-*{
+/* *{
     border: 1px solid red;
-}
+} */
 
 body {
     box-sizing: border-box;
@@ -22,10 +22,7 @@ body {
 
 /* logo */
 .logo-container {
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    padding: 3rem;
 }
 
 /* burguer menu bars */
@@ -93,6 +90,10 @@ body {
 
 /* styling nav */
 
+.container-fluid {
+    background-color: var(--bg-color);
+}
+
 nav ul li {
     display: flex;
     list-style: none;
@@ -109,35 +110,29 @@ nav ul li a:hover {
     transition: all 0.5s ease-in-out;
 }
 
-.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-
 .menu-nav {
     display: flex;
     align-items: center;
-    padding: 0 3rem;
-    margin: 1rem 0;
     background-color: var(--bg-color);
     color: var(--primary-text-color);
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-nav-item {
     text-decoration: none;
-    padding: 2rem;
-    gap: 3rem;
+    padding: 1rem;
 }
 
 /* Hero Section */
 
 .home {
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
-    padding: 3rem;
+    padding-top: 3rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -179,11 +174,10 @@ nav ul li a:hover {
 /* About Section*/
 
 .about {
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     padding: 3rem;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
