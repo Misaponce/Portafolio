@@ -23,14 +23,15 @@ body {
 /* logo */
 .logo-container {
     text-decoration: none;
+    margin: 1rem 0 0 0;
 }
 
 /* burguer menu bars */
 .menu_btn {
     position: absolute;
     z-index: 1;
-    right: 2rem;
-    top: 2rem;
+    right: 2.5rem;
+    top: 1.5rem;
     height: 20px;
     width: 28px;
     cursor: pointer;
@@ -120,7 +121,7 @@ nav ul li a:hover {
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
     gap: 4rem;
-    margin: 0;
+    margin: 1rem 2rem 0 0;
     padding: 0;
 }
 
@@ -220,7 +221,7 @@ nav ul li a:hover {
 .about-img-wrapper {
     width: 250px;
     height: 250px;
-    box-shadow: 5px 5px 10px 0px #c4480093;
+    box-shadow: 5px 5px 10px 0px #183A37;
 }
 
 img {
@@ -310,7 +311,8 @@ ul.skill-list li::before {
       }
 
       .logo-container {
-        padding: 2rem;
+        padding: 0.5rem 0;
+        margin: 1rem 0;
     }
     
   }
@@ -318,5 +320,6 @@ ul.skill-list li::before {
   @media only screen and (min-width: 800px) {
     .menu_btn {
         visibility: hidden;
+        transition: all 0.5s ease-in-out;
     }
   }

@@ -9,6 +9,8 @@ const navItems = document.querySelectorAll('.menu-nav-item');
 const body = document.body;
 let lastScroll = 0;
 
+
+// count scroll based on Y position
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
