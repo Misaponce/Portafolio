@@ -323,6 +323,18 @@ ul.skill-list li::before {
     padding: 10px;
 }
 
+.project-img {
+    position: relative;
+    width: 60vh;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    border-bottom: 5px solid #C44900;
+    cursor: pointer;
+}
+
 /* Contact Section */
 
 .contact {
@@ -374,9 +386,10 @@ ul.skill-list li::before {
 }
 
 .contact p {
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     color: var(--primary-text-color);
     font-size: 21px;
+    text-justify: inter-word;
 }
 
 
