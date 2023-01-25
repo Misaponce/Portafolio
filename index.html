@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Poiret+One&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Portafolio</title>
@@ -21,7 +23,7 @@
             <div class="row">
                 <!-- Logo -->
                     <div class="logo-container col-1 d-flex justify-content-center align-items-center">
-                        <span class="logo">A</span>
+                        <span class="logo">M</span>
                     </div>
                 <!-- Burguer Menu -->
                     <span class="menu_btn">
@@ -32,10 +34,10 @@
                     <div class="col-11 d-flex align-items-center justify-content-end">
                         <nav class="nav">
                             <ul class="menu-nav">
-                                <li><a href="#" class="menu-nav-item">Home</a></li>
-                                <li><a href="#" class="menu-nav-item">About</a></li>
-                                <li><a href="#" class="menu-nav-item">Projects</a></li>
-                                <li><a href="#" class="menu-nav-item">Contact</a></li>
+                                <li><a href="#home" class="menu-nav-item">Home</a></li>
+                                <li><a href="#about" class="menu-nav-item">About</a></li>
+                                <li><a href="#projects" class="menu-nav-item">Projects</a></li>
+                                <li><a href="#contact" class="menu-nav-item">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -45,7 +47,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="home">
+        <section id="home" class="home">
             <div class="home-container container">
                 <div class="home-item row">
                     <h5>Hi, my name is</h5>
@@ -68,8 +70,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="about">
+        <!-- about section -->
+        <section id="about" class="about">
             <div class="about-container container">
                 <div class="row display-6 about-item">About</div>
                 <div class="about-info row">
@@ -78,15 +80,15 @@
                             Hi there, my name is Misael Ponce and I always feel atracted about technology, it all started back in 2010 when I was able to assamble my first computer by my self.</p>
                         <p class="h5"> Eventually I follow my curiosity and end up self-teaching web development, focusing on the frontend looking forward to improve my knowledge.</p> 
                         <p class="h5">I recently was able to finish my own portofolio along with some basic projects that I'm also sharing here.</p>
-                        <p class="h5"> Below are a few technologies that I have worked with: </p>
+                        <p class="h5"> Below are a few technologies that I have worked within this portofolio and other projects: </p>
 
                         <div class="row skill">
                             <ul class="skill-list">
                                 <li class="skill-item">JavaScript</li>
-                                <li class="skill-item">Bootstrap</li>
+                                <li class="skill-item">Bootstrap 5</li>
                                 <li class="skill-item">Sass</li>
                                 <li class="skill-item">React</li>
-                                <li class="skill-item">Node.js</li>
+                                <li class="skill-item">Figma</li>
                             </ul>
                         </div>
                     </div>
@@ -98,6 +100,67 @@
                 </div>
             </div>
         </section>
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="projects-container container">
+                <div class="row display-6 projects-item">Projects</div>
+                <div class="row">
+                    <div class="col-6 projects-info">
+                        <div class="row">
+                            <h5>Personal Project</h5>
+                        </div>
+                        <div class="row">
+                            <h4>Portafolio</h4>
+                        </div>
+                        <div class="row">
+                            <p>
+                                This is my personal portfolio in which I've working the past few days, however it still has alot work to do on it, but I wanted to show the progress as an evidence of my improvement.
+                            </p>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 project-img">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container d-block justify-content-center">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h3 class="display-6 contact-item">Contact</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <span class="middle-line"></span>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4 d-flex justify-content-center">
+                        <p>
+                            Whether you want to share any idea to work together or just want to say hi, I'll be ready to answer on the following channels:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container social-icons d-flex justify-content-center">
+                <span><a class="link-primary" href="https://github.com/Misaponce" target="_blank"><i class="bi bi-github"></i></a></span>
+                <span><a class="link-primary" href="https://twitter.com/Misa_Ponce" target="_blank"><i class="bi bi-twitter"></i></a></span>
+                <span><a class="link-primary" href="https://www.instagram.com/misaponc3" target="_blank"><i class="bi bi-instagram"></i></a></span>
+                <span><a class="link-primary" href="https://www.linkedin.com/in/misael-ponce-976aa6240/" target="_blank"><i class="bi bi-linkedin"></i></a></span>
+            </div>
+        </section>
+        <footer>
+            <div class="container d-flex justify-content-center">
+                Build & Designed by Misael Ponce
+            </div>
+        </footer>
     </main>
 
     <script src="./js/main.js"></script>
