@@ -358,6 +358,10 @@ ul.skill-list li::before {
     color: var(--primary-text-color) !important;
 }
 
+.social-icons i {
+    cursor: pointer;
+}
+
 .social-icons {
     gap: 40px;
     padding: 0.3rem 0;
