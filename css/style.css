@@ -360,6 +360,8 @@ ul.skill-list li::before {
 .overlay h6 a {
     text-decoration: none;
     color: #C44900;
+    font-family: var(--main-font);
+    font-weight: 700;
 }
 
 .overlay h6:hover {
