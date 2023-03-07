@@ -332,7 +332,7 @@ ul.skill-list li::before {
 .img-wrapper {
     width: 45%;
     height: 300px;
-    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    box-shadow: 0 5px 15px rgb(40, 40, 40);
     padding: 0 !important;
 }
 
